@@ -121,7 +121,7 @@
     interactive geographic and time-based views using D3.js and TopoJSON to
     examine variation in outcomes over time.
   tech: [Next.js, React, D3.js, TopoJSON, Bootstrap]
-  github_url: https://github.com/VeraShi17/IV_FinalProject
+  github_url: https://github.com/VeraShi17/Maternal-Mortality-Across-Globe
 
 - title: ApplyTrackify
   category: software
