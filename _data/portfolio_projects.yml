@@ -33,6 +33,7 @@
   category: research
   period: Oct – Dec 2025
   organization: University of Pennsylvania
+  github_url: https://github.com/H-control/CIS-5200-final-Text2Vec
   summary: >-
     Benchmarked eight text chunking strategies for HTML-document retrieval on the Natural Questions development set, including sliding windows, structural segmentation, semantic chunking, and late-chunking variants. Analyzed retrieval quality across document lengths using
     Recall@10, MRR, and nDCG, with HTML-aware chunking achieving 0.870 Recall@10
@@ -43,6 +44,7 @@
   category: research
   period: Aug 2024 – Aug 2025
   organization: NYU Shanghai
+  github_url: https://github.com/VeraShi17/existing-sv-backup
   summary: >-
     Developed a VITS-based zero-shot singing voice conversion system using a
     pretrained ERes2Net-Large speaker encoder and a pseudo-dataset training
@@ -62,24 +64,24 @@
     average recovery accuracy in the tested setting.
   tech: [C++, Fiat–Naor Algorithm, RainbowCrack-NG, Rainbow Tables, Subset Sum]
 
-- title: Automatic Alignment of 3D Point Clouds to 2D Floor Plans
-  category: research
-  period: Sep 2023 – Apr 2024
-  organization: NYU Tandon School of Engineering
-  summary: >-
-    Investigated geometric registration between reconstructed 3D environments and 2D floor plans for navigation. Generated point-cloud representations from Habitat-Matterport 3D scenes and evaluated Go-ICP-based alignment between the spatial representations.
-  tech: [Numpy, Go-ICP, HM3D]
+# - title: Automatic Alignment of 3D Point Clouds to 2D Floor Plans
+#   category: research
+#   period: Sep 2023 – Apr 2024
+#   organization: NYU Tandon School of Engineering
+#   summary: >-
+#     Investigated geometric registration between reconstructed 3D environments and 2D floor plans for navigation. Generated point-cloud representations from Habitat-Matterport 3D scenes and evaluated Go-ICP-based alignment between the spatial representations.
+#   tech: [Numpy, Go-ICP, HM3D]
 
-- title: Semantic-Based Audio Segmentation
-  category: research
-  period: Jun – Sep 2023
-  organization: Shanghai Jiao Tong University
-  summary: >-
-    Developed a speech segmentation workflow combining frame-level voice
-    activity detection, automatic speech recognition, and semantic embeddings.
-    Integrated NVIDIA NeMo and the MarbleNet VAD model to support segmentation
-    based on both acoustic boundaries and spoken content.
-  tech: [Python, NVIDIA NeMo, MarbleNet, VAD, ASR]
+# - title: Semantic-Based Audio Segmentation
+#   category: research
+#   period: Jun – Sep 2023
+#   organization: Shanghai Jiao Tong University
+#   summary: >-
+#     Developed a speech segmentation workflow combining frame-level voice
+#     activity detection, automatic speech recognition, and semantic embeddings.
+#     Integrated NVIDIA NeMo and the MarbleNet VAD model to support segmentation
+#     based on both acoustic boundaries and spoken content.
+#   tech: [Python, NVIDIA NeMo, MarbleNet, VAD, ASR]
 
 # Software projects are ordered by the known year, then by the established portfolio priority.
 - title: WanderBite
