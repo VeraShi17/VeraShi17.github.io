@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://VeraShi17.github.io/sitemap.xml
