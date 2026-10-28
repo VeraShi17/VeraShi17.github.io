@@ -1,0 +1,140 @@
+# Research entries are ordered from newest to oldest. Keep ongoing work distinct from measured results.
+- title: Multi-Task Interference in LLMs
+  category: research
+  period: Sep 2026 – Present
+  organization: University of Pennsylvania
+  type: Ongoing research
+  summary: >-
+    Investigating when language models fail to solve multiple tasks jointly despite solving each task in isolation. Designing controlled isolated, contextual, and joint evaluations to examine task dependencies, ordering, and shared context while distinguishing answer interference from formatting failures.
+  tech: [Python, Qwen2.5-VL, Gemma 3, GSM8K, CLEVR, LLM Evaluation]
+
+- title: "When User Beliefs Shape What Agents Learn: Sycophancy in Evidence Acquisition"
+  category: research
+  period: Sep 2026 – Present
+  organization: University of Pennsylvania
+  type: Ongoing research
+  summary: >-
+    Studying whether a user's expressed beliefs influence which evidence an LLM agent selects during information gathering. Developing controlled evaluations of evidence selection and how those choices affect later reasoning and sycophantic responses.
+  tech: [LLM Agents, Evidence Selection, Belief Conditioning, Behavioral Evaluation]
+
+- title: LLM Alignment for Sycophancy Mitigation
+  category: research
+  period: Feb – May 2026
+  organization: University of Pennsylvania
+  summary: >-
+    Built an end-to-end alignment and evaluation pipeline combining automated
+    adversarial data generation, answer verification, SFT/DPO training, and
+    preference-pair synthesis. Produced 2,800+ validated training conversations;
+    controlled ablations reduced sycophancy rate from 15.2% to 3.5% while
+    improving legitimate correction rate from 90.4% to 94.9%.
+  tech: [Python, Azure OpenAI, GPT-4.1, SFT, DPO, LLM Evaluation]
+
+- title: Evaluating Text Chunking Strategies for Embedding Models
+  category: research
+  period: Oct – Dec 2025
+  organization: University of Pennsylvania
+  summary: >-
+    Benchmarked eight text chunking strategies for HTML-document retrieval on the Natural Questions development set, including sliding windows, structural segmentation, semantic chunking, and late-chunking variants. Analyzed retrieval quality across document lengths using
+    Recall@10, MRR, and nDCG, with HTML-aware chunking achieving 0.870 Recall@10
+    on long documents.
+  tech: [Python, GIST-Embedding-v0, Jina Embeddings, BeautifulSoup4, Natural Questions]
+
+- title: Zero-Shot Singing Voice Conversion
+  category: research
+  period: Aug 2024 – Aug 2025
+  organization: NYU Shanghai
+  summary: >-
+    Developed a VITS-based zero-shot singing voice conversion system using a
+    pretrained ERes2Net-Large speaker encoder and a pseudo-dataset training
+    strategy. Evaluated generalization to unseen singers against SO-VITS-SVC,
+    achieving SMOS 4.01, NMOS 3.72, and a reported speaker-similarity score
+    of 0.64 in the zero-shot setting.
+  tech: [PyTorch, VITS, ERes2Net-Large, torchaudio, librosa]
+
+- title: "Exploring Function Inversion: From Fiat–Naor Algorithm to Rainbow Tables"
+  category: research
+  period: Jun – Aug 2024
+  organization: NYU Shanghai
+  summary: >-
+    Studied time–space tradeoffs in function inversion, extending the analysis of
+    Fiat–Naor-style algorithms to k-regular functions. Implemented subset-sum
+    hash inversion with rainbow tables using RainbowCrack-NG and measured 99.5%
+    average recovery accuracy in the tested setting.
+  tech: [C++, Fiat–Naor Algorithm, RainbowCrack-NG, Rainbow Tables, Subset Sum]
+
+- title: Automatic Alignment of 3D Point Clouds to 2D Floor Plans
+  category: research
+  period: Sep 2023 – Apr 2024
+  organization: NYU Tandon School of Engineering
+  summary: >-
+    Investigated geometric registration between reconstructed 3D environments and 2D floor plans for navigation. Generated point-cloud representations from Habitat-Matterport 3D scenes and evaluated Go-ICP-based alignment between the spatial representations.
+  tech: [Numpy, Go-ICP, HM3D]
+
+- title: Semantic-Based Audio Segmentation
+  category: research
+  period: Jun – Sep 2023
+  organization: Shanghai Jiao Tong University
+  summary: >-
+    Developed a speech segmentation workflow combining frame-level voice
+    activity detection, automatic speech recognition, and semantic embeddings.
+    Integrated NVIDIA NeMo and the MarbleNet VAD model to support segmentation
+    based on both acoustic boundaries and spoken content.
+  tech: [Python, NVIDIA NeMo, MarbleNet, VAD, ASR]
+
+# Software projects are ordered by the known year, then by the established portfolio priority.
+- title: WanderBite
+  category: software
+  period: "2026"
+  summary: >-
+    Built a context-aware dining agent with typed-state orchestration and layered memory across session context, SQL-backed history, and mem0 user preferences. Developed a retrieval and recommendation workflow combining SQL filtering, Qdrant search, reranking, location-aware validation, and bounded replanning. Added real-time WebSocket chat and execution tracing for observability and debugging.
+  tech: [Python, FastAPI, SQLAlchemy, Qdrant, mem0, React, TypeScript, WebSockets]
+
+- title: Today's Signal
+  category: software
+  period: "2026"
+  summary: >-
+    Developed a native iOS language-learning app that converts Korean chat
+    screenshots into structured study material. Combined on-device Apple Vision
+    OCR and editable text extraction with optional LLM-backed explanations and
+    reply feedback; implemented response validation, retry paths, and local
+    vocabulary/grammar card persistence with SwiftData.
+  tech: [Swift, SwiftUI, Apple Vision, SwiftData, OCR, OpenAI API]
+  github_url: https://github.com/VeraShi17/TodaySignal
+
+- title: CineInteract
+  category: software
+  period: "Oct – Dec 2025"
+  organization: University of Pennsylvania
+  summary: >-
+    Built a full-stack movie analytics platform integrating 167K+ films and 7.4M+ relationships from TMDB and IMDb into PostgreSQL on AWS RDS. Developed a Python ETL pipeline for cross-source entity resolution and relational modeling, and implemented search and interactive analytics using FastAPI and React/TypeScript. Optimized complex analytical queries with indexes and materialized views, reducing average latency from 34.9s to 1.5s (~23× faster).
+  tech: [Python, FastAPI, React, TypeScript, PostgreSQL, AWS RDS, pandas]
+
+- title: Maternal Mortality Across the Globe
+  category: software
+  period: "Oct – Dec 2024"
+  organization: New York University Shanghai
+  summary: >-
+    Built a Next.js data-visualization website exploring maternal-mortality
+    patterns across countries from 1980 to 2021. Organized the dataset into
+    interactive geographic and time-based views using D3.js and TopoJSON to
+    examine variation in outcomes over time.
+  tech: [Next.js, React, D3.js, TopoJSON, Bootstrap]
+  github_url: https://github.com/VeraShi17/IV_FinalProject
+
+- title: ApplyTrackify
+  category: software
+  period: "Mar – May 2024"
+  organization: New York University
+  summary: >-
+    Prototyped a graduate-application tracking web app around account, deadline, and status workflows. Designed MongoDB/Mongoose models for users, lists, and application records.
+  tech: [Node.js, Express, MongoDB, Mongoose, Handlebars]
+  github_url: https://github.com/VeraShi17/ApplyTrackify
+
+- title: CareerLinker
+  category: software
+  period: "Oct – Dec 2023"
+  organization: New York University
+  summary: >-
+    Built a Java desktop recruitment system with separate job-seeker and recruiter workflows for job search, applications, posting, and applicant review. Used Swing for the interface and JDBC with MySQL for data storage.
+  tech: [Java, Swing, JDBC, MySQL]
+  github_url: https://github.com/VeraShi17/CSCIUA470

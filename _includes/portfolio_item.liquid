@@ -1,0 +1,53 @@
+{% assign item = include.item %}
+<article class="timeline-item">
+  <div class="timeline-date">{{ item.period | default: item.label | escape }}</div>
+  <div class="timeline-content">
+    <div class="timeline-heading-row">
+      <h3 class="timeline-title">{{ item.title | default: item.company | escape }}</h3>
+      {% if item.github_url or item.demo_url %}
+        <div class="timeline-links">
+          {% if item.github_url -%}
+            <a
+              href="{{ item.github_url | escape }}"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub repository for {{ item.title | escape }}"
+              >GitHub <span aria-hidden="true">↗</span></a
+            >
+          {%- endif %}
+          {% if item.demo_url -%}
+            <a href="{{ item.demo_url | escape }}" target="_blank" rel="noopener noreferrer" aria-label="Demo for {{ item.title | escape }}"
+              >Demo <span aria-hidden="true">↗</span></a
+            >
+          {%- endif %}
+        </div>
+      {% endif %}
+    </div>
+    <p class="timeline-meta">
+      {% if item.role %}{{ item.role | escape }}{% endif %}
+      {% if item.organization %}{{ item.organization | escape }}{% endif %}
+      {% if item.type -%}
+        <span class="timeline-type{% if item.role or item.organization %} has-prefix{% endif %}">{{ item.type | escape }}</span>
+      {%- endif %}
+      {% if item.location -%}
+        <span class="timeline-location">{{ item.location | escape }}</span>
+      {%- endif %}
+    </p>
+    {% if item.details %}
+      <div class="timeline-details">
+        {% for detail in item.details %}
+          <p class="timeline-summary">{{ detail | escape }}</p>
+        {% endfor %}
+      </div>
+    {% elsif item.summary %}
+      <p class="timeline-summary">{{ item.summary | escape }}</p>
+    {% endif %}
+    {% if item.tech and item.tech.size > 0 %}
+      <ul class="tech-list" aria-label="Technologies and methods">
+        {% for tag in item.tech %}
+          <li>{{ tag | escape }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+</article>

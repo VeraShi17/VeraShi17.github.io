@@ -1,0 +1,33 @@
+- company: Amazon
+  role: Software Development Engineer Intern
+  period: Jun – Aug 2026
+  location: Seattle, WA
+  details:
+    - >-
+      Built a multi-tenant, self-service GenAI platform for manager-facing insights, reducing the launch time for new insight types from approximately three weeks to under one day.
+    - >-
+      Engineered an event-driven serverless pipeline with sub-5-second p99 generation latency, and implemented automated LLM evaluation and grounding checks to filter over 80% of low-quality or hallucinated outputs.
+  tech: [React, TypeScript, Amazon Bedrock, AWS Lambda, DynamoDB, SQS]
+
+- company: KNOVA AI
+  role: Full-Stack Software Engineer Intern
+  period: Feb – Jul 2025
+  type: Early-stage AI startup
+  location: Shanghai, China
+  details:
+    - >-
+      Built an AI agent operations console for Tapi, KNOVA's AI product, enabling teams to configure, deploy, and monitor 80+ production agents handling 320+ daily runs.
+    - >-
+      Developed asynchronous LangGraph-based agent execution with persistent run state, automated validation, and bounded recovery loops, reducing routine content turnaround from approximately three hours to under 20 minutes.
+  tech: [LangGraph, Next.js, React, TypeScript, MongoDB, AWS]
+
+- company: CoStone Capital
+  role: Full-Stack Developer Intern
+  period: Jun – Aug 2024
+  location: Shanghai, China
+  details:
+    - >-
+      Enhanced market-data dashboards with synchronized ticker updates and automated deployment through GitHub Actions.
+    - >-
+      Built a desktop visualization and trading tool integrating Polygon.io market data with the Interactive Brokers Trader Workstation API.
+  tech: [Python, Dash, PyQt5, Polygon.io, GitHub Actions]
